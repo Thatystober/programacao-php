@@ -17,24 +17,30 @@
                 </div>
         </header>
         <section id="imc">
-            <div>
+            <div id="divisao">
                 <h2>Utilize os campos abaixo para calcular o seu IMC.</h2>
 
-                <form action="/processo" method="post">
-                    <label for="peso">Peso</label>
-                    <input type="number" name="peso"><span>kg</span>
-                    
-                    <label for="altura">Altura</label>
-                    <input type="number" name="altura"><span>m</span>
+                <form class="imc-form" action="/processo" method="post">
 
-                    <input type="submit" value="Enviar">
-                    <input type="button" value="Calcular">
+                    <label id="nome" for="nome">Nome:</label>
+                    <input type="text" name="nome">
+
+                    <label class="campo" for="idade">Idade</label>
+                    <input type="number" name="idade">
+
+                    <label class="campo" for="peso">Peso:</label>
+                    <input type="number" name="peso">
+                    
+                    <label class="campo" for="altura">Altura:</label>
+                    <input type="number" name="altura">
                 </form>
+                <div id="botoes"> 
+                    <input id="enviar" type="submit" value="Enviar">
+                    <input id="calcular" type="button" value="Calcular">
+                </div>
                 <p id="resultado"> Seu IMC é de:     Kg/m²</p>
             </div>
 
-           
-        
             <section>
                 <table>
                 <tr>
