@@ -8,10 +8,20 @@
 <body> 
 <?php
 
-    $nome   = $_POST['nome'];
-    $idade  = $_POST['idade'];
-    $peso   = $_POST['peso'];
-    $altura = $_POST['altura'];
+    $nome   = $_POST['nome1'];
+    $idade  = $_POST['idade1'];
+    $peso   = $_POST['peso1'];
+    $altura = $_POST['altura1'];
+
+    $nome2 = $_POST['nome2'];
+    $idade2 = $_POST['idade2'];
+    $peso2 = $_POST['peso2'];
+    $altura2 = $_POST['altura2';]
+
+    $nome3 = $_POST['nome3'];
+    $idade3 = $_POST['idade3'];
+    $peso3 = $_POST['peso3'];
+    $altura2 = $_POST['altura3';]
 
     function calculo(){
       $conta1 = $altura*$altura;
