@@ -16,12 +16,12 @@
     $nome2 = $_POST['nome2'];
     $idade2 = $_POST['idade2'];
     $peso2 = $_POST['peso2'];
-    $altura2 = $_POST['altura2';]
+    $altura2 = $_POST['altura2'];
 
     $nome3 = $_POST['nome3'];
     $idade3 = $_POST['idade3'];
     $peso3 = $_POST['peso3'];
-    $altura2 = $_POST['altura3';]
+    $altura3 = $_POST['altura3'];
 
     function calculo(){
       $conta1 = $altura*$altura;
@@ -33,28 +33,28 @@
     function categoria(){
       $abaixo = 'Abaixo do Peso';
       $normal = 'Peso Normal';
-      $sobrepeso = 'Sobrepesso';
+      $sobrepeso = 'Sobrepeso';
       $obesidade1 = 'Obesidade Grau 1';
       $obesidade2 = 'Obesidade Grau 2';
       $obesidade3 = 'Obesidade Grau 3';
 
-      if ($resultado1 && $resultado2 & $resultado3 =< 18,5) {
-          echo '<p>Seu IMC é' .$resultado 'e está </p>' .$abaixo;
+      if ($resultado1 && $resultado2 && $resultado3 <= 18.5) {
+          echo '<p>Seu IMC é', $resultado, 'e está </p>', $abaixo;
       }
-      elseif($resultado1 && $resultado2 & $resultado3 >= 18,5 or $resultado1 && $resultado2 & $resultado3 <= 24,9){
-          echo '<p>Seu IMC é' .$resultado 'e está </p>' .$normal;
+      elseif($resultado1 && $resultado2 && $resultado3 >= 18.5 or $resultado1 && $resultado2 && $resultado3 <= 24.9){
+          echo '<p>Seu IMC é', $resultado, 'e está </p>', $normal;
       }
-      elseif($resultado1 && $resultado2 & $resultado3 >= 25,0 or $resultado1 && $resultado2 & $resultado3 <= 29,9){
-          echo '<p>Seu IMC é' .$resultado 'e está </p>' .$sobrepeso;
+      elseif($resultado1 && $resultado2 && $resultado3 >= 25.0 or $resultado1 && $resultado2 && $resultado3 <= 29.9){
+          echo '<p>Seu IMC é', $resultado, 'e está </p>', $sobrepeso;
       }
-      elseif($resultado1 && $resultado2 & $resultado3 >= 30,0 or $resultado1 && $resultado2 & $resultado3 <= 34,9){
-        echo '<p>Seu IMC é' .$resultado 'e está </p>' .$obesidade1;
+      elseif($resultado1 && $resultado2 && $resultado3 >= 30.0 or $resultado1 && $resultado2 && $resultado3 <= 34.9){
+        echo '<p>Seu IMC é', $resultado, 'e está </p>', $obesidade1;
         // mudar os echos (?)
       }
-      elseif($resultado1 && $resultado2 & $resultado3 >= 35,0 or $resultado1 && $resultado2 & $resultado3 <= 39,9){
-          echo '<p>Seu IMC é' .$resultado 'e está </p>' .$obesidade2;
+      elseif($resultado1 && $resultado2 && $resultado3 >= 35.0 or $resultado1 && $resultado2 && $resultado3 <= 39.9){
+          echo '<p>Seu IMC é', $resultado, 'e está </p>', $obesidade2;
       }
-      elseif($resultado1 && $resultado2 & $resultado3 >= 40,0){
-        echo '<p>Seu IMC é' .$resultado 'e está </p>' .$obesidade3;
+      elseif($resultado1 && $resultado2 && $resultado3 >= 40.0){
+        echo '<p>Seu IMC é', $resultado, 'e está </p>', $obesidade3;
       }
     }
