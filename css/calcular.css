@@ -1,0 +1,28 @@
+#resultado{
+    padding: 10px;
+    background: #f0f0f5;
+    margin: 20px auto;
+    width: 50%;
+    border-spacing: border-box;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.usuario,
+#media{
+    color: #7952b3;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 0 10px;
+}
+#resultado button{
+    padding: 10px;
+    border-radius: 5px;
+    background: #7952b3;
+    border: 1px solid #7952b3;
+    width: 32%;
+}
+#resultado button a{
+    color: #fff;
+    text-decoration: none;
+}
